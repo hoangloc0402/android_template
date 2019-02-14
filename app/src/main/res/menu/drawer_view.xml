@@ -8,14 +8,14 @@
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_android"
-            android:title="Gallery" />
+            android:title="ScrollView Activity" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_android"
-            android:title="Slide Show" />
+            android:title="Login Activity" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_android"
-            android:title="Tools" />
+            android:title="Setting Activity" />
     </group>
 </menu>

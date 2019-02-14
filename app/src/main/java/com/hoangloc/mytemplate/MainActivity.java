@@ -41,13 +41,13 @@ public class MainActivity extends AppCompatActivity {
                                 startActivity(intent);
                                 break;
                             case R.id.nav_gallery:
-                                Toast.makeText(getBaseContext(),"Gallery", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getBaseContext(),"ScrollView Activity", Toast.LENGTH_SHORT).show();
                                 break;
                             case R.id.nav_manage:
-                                Toast.makeText(getBaseContext(),"Manage", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getBaseContext(),"Login Activity", Toast.LENGTH_SHORT).show();
                                 break;
                             case R.id.nav_slideshow:
-                                Toast.makeText(getBaseContext(),"Slide Show", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getBaseContext(),"Setting Activity", Toast.LENGTH_SHORT).show();
                                 break;
                             default:
                                 break;

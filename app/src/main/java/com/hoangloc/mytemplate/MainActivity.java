@@ -34,20 +34,27 @@ public class MainActivity extends AppCompatActivity {
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(MenuItem menuItem) {
+                        Intent intent;
                         switch (menuItem.getItemId()){
                             case R.id.nav_tab:
                                 Toast.makeText(getBaseContext(),"Tab Activity", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(getApplicationContext(), ActivityTab.class);
+                                intent = new Intent(getApplicationContext(), ActivityTab.class);
                                 startActivity(intent);
                                 break;
                             case R.id.nav_gallery:
                                 Toast.makeText(getBaseContext(),"ScrollView Activity", Toast.LENGTH_SHORT).show();
+                                intent = new Intent(getApplicationContext(), ActivityScrollView.class);
+                                startActivity(intent);
                                 break;
                             case R.id.nav_manage:
                                 Toast.makeText(getBaseContext(),"Login Activity", Toast.LENGTH_SHORT).show();
+                                intent = new Intent(getApplicationContext(), ActivityLogin.class);
+                                startActivity(intent);
                                 break;
                             case R.id.nav_slideshow:
                                 Toast.makeText(getBaseContext(),"Setting Activity", Toast.LENGTH_SHORT).show();
+                                intent = new Intent(getApplicationContext(), ActivitySetting.class);
+                                startActivity(intent);
                                 break;
                             default:
                                 break;

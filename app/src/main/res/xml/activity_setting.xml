@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <CheckBoxPreference
+        android:key="pref_sync"
+        android:title="Tittle"
+        android:summary="Sumary"
+        android:defaultValue="true" />
+    <SwitchPreference
+        android:key="notifications"
+        android:title="Enable message notifications"/>
+    <RingtonePreference
+        android:key="Key"
+        android:title="Tittle"
+        android:ringtoneType="notification"/>
+    <EditTextPreference
+        android:key="key"
+        android:title="EditText Preference"
+        android:summary="EditText Summary"
+        android:dialogMessage="Dialog Message"
+        android:defaultValue="Default value" />
+    <ListPreference
+        android:key="PREF_LIST"
+        android:title="ListPreference title"
+        android:summary="ListPreference summary"
+        android:entries="@array/listentries"
+        android:entryValues="@array/listvalues" />
+
+</PreferenceScreen>

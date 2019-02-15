@@ -3,25 +3,25 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent">
     <CheckBoxPreference
-        android:key="pref_sync"
+        android:key="checkbox"
         android:title="Tittle"
         android:summary="Sumary"
         android:defaultValue="true" />
     <SwitchPreference
-        android:key="notifications"
+        android:key="switchbox"
         android:title="Enable message notifications"/>
     <RingtonePreference
-        android:key="Key"
+        android:key="ringtone"
         android:title="Tittle"
         android:ringtoneType="notification"/>
     <EditTextPreference
-        android:key="key"
+        android:key="editbox"
         android:title="EditText Preference"
         android:summary="EditText Summary"
         android:dialogMessage="Dialog Message"
         android:defaultValue="Default value" />
     <ListPreference
-        android:key="PREF_LIST"
+        android:key="listbox"
         android:title="ListPreference title"
         android:summary="ListPreference summary"
         android:entries="@array/listentries"

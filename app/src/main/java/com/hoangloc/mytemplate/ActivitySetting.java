@@ -7,7 +7,6 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.SwitchPreference;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 public class ActivitySetting extends PreferenceActivity {
@@ -37,7 +36,6 @@ public class ActivitySetting extends PreferenceActivity {
             @Override
             public boolean onPreferenceClick(Preference preference) {
                 if (switchPreference.isChecked())
-
                     Toast.makeText(getBaseContext(),"Switch On", Toast.LENGTH_SHORT).show();
                 else
                     Toast.makeText(getBaseContext(),"Switch Off", Toast.LENGTH_SHORT).show();
@@ -47,12 +45,22 @@ public class ActivitySetting extends PreferenceActivity {
 
 
         editTextPreference = (EditTextPreference) findPreference("editbox");
-//        editTextPreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-//            @Override
-//            public boolean onPreferenceChange(Preference preference, Object newValue) {
-//
-//                return false;
-//            }
-//        });
+        editTextPreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                Toast.makeText(getBaseContext(),newValue.toString(), Toast.LENGTH_SHORT).show();
+                return true;
+            }
+        });
+
+        listPreference = (ListPreference) findPreference("listbox");
+        listPreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                Toast.makeText(getBaseContext(), newValue.toString(), Toast.LENGTH_SHORT).show();
+                return true;
+            }
+        });
+
     }
 }
